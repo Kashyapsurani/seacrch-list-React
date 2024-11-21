@@ -1,0 +1,125 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  /* Light background for better contrast */
+  padding: 20px;
+}
+
+/* Main container for the entire contact search section */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Search input field */
+.searchInput {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Focus effect for input field */
+.searchInput:focus {
+  outline: none;
+  border-color: #4caf50;
+  /* Green border on focus */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* List container for the profile cards, each card in one row */
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  /* Stack cards vertically */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling for each profile card container (stacked vertically) */
+.cardContainer {
+  width: 100%;
+  /* Full width of the container */
+  display: flex;
+  flex-direction: column;
+  /* Stack both the cards vertically */
+  gap: 20px;
+}
+
+/* Styling for profile card */
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile image styling */
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Basic card name and phone number styling */
+.cardTitle {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cardPhone,
+.cardEmail {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* No results message */
+.noResults {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
